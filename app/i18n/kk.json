@@ -1,0 +1,42 @@
+{
+  "common": {
+    "selectLanguage": "Тілді таңдаңыз",
+    "close": "Жабу",
+    "loading": "Жүктелуде...",
+    "error": "Қате",
+    "retry": "Қайталау",
+    "cancel": "Болдырмау",
+    "save": "Сақтау",
+    "delete": "Жою",
+    "edit": "Өңдеу",
+    "search": "Іздеу",
+    "settings": "Параметрлер",
+    "profile": "Профиль",
+    "notifications": "Хабарландырулар",
+    "darkMode": "Қараңғы тема",
+    "lightMode": "Жарық тема",
+    "language": "Тіл"
+  },
+  "auth": {
+    "signIn": "Кіру",
+    "signUp": "Тіркелу",
+    "signOut": "Шығу",
+    "email": "Email",
+    "password": "Құпия сөз",
+    "forgotPassword": "Құпия сөзді ұмыттыңыз ба?",
+    "resetPassword": "Құпия сөзді қалпына келтіру",
+    "confirmPassword": "Құпия сөзді растау",
+    "username": "Пайдаланушы аты",
+    "alreadyHaveAccount": "Аккаунтыңыз бар ма?",
+    "dontHaveAccount": "Аккаунтыңыз жоқ па?"
+  },
+  "errors": {
+    "required": "Бұл өріс міндетті",
+    "invalidEmail": "Жарамсыз email мекенжайы",
+    "passwordTooShort": "Құпия сөз кемінде 6 таңба болуы керек",
+    "passwordsDontMatch": "Құпия сөздер сәйкес келмейді",
+    "invalidCredentials": "Жарамсыз email немесе құпия сөз",
+    "networkError": "Желі қатесі. Байланысты тексеріңіз",
+    "unknownError": "Белгісіз қате орын алды"
+  }
+} 

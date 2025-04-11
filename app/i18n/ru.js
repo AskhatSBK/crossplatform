@@ -1,0 +1,37 @@
+export default {
+  common: {
+    appName: 'Генератор Команд',
+    appSubtitle: 'Создавайте сбалансированные команды быстро',
+    generate: 'Сгенерировать Команды',
+    about: 'О нас',
+    settings: 'Настройки',
+    selectLanguage: 'Выбрать Язык',
+  },
+  home: {
+    quickGenerate: 'Быстрая Генерация',
+    teamName: 'Название Команды',
+    memberCount: 'Количество Участников',
+    groupCount: 'Количество Групп',
+    advancedOptions: 'Расширенные Настройки',
+    importMembers: 'Импорт Участников',
+    teamSettings: 'Настройки Команды',
+    exportTeams: 'Экспорт Команд',
+    recentTeams: 'Недавние Команды',
+    members: 'участников',
+  },
+  about: {
+    title: 'О Нас',
+    keyFeatures: 'Ключевые Функции',
+    framework: 'Фреймворк: React Native (Expo)',
+    database: 'База данных: Firebase',
+    api: 'Мы будем использовать Google Sheets API',
+    developedBy: 'Разработано Сабитхановым Асхатом, Ашеновым Бексултаном в рамках курса "Кросс-платформенная разработка" в Astana IT University.',
+    mentor: 'Ментор (Преподаватель): Доцент Абзал Кызырканов',
+  },
+  gestures: {
+    tapToAdd: 'Нажмите, чтобы добавить новую команду',
+    longPressToDelete: 'Долгое нажатие для удаления',
+    swipeToReorder: 'Проведите для изменения порядка команд',
+    doubleTapToEdit: 'Двойное нажатие для редактирования названия команды',
+  },
+}; 

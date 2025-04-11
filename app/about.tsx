@@ -1,5 +1,7 @@
 import { Text, View, StyleSheet, ScrollView } from 'react-native';
 import { Link } from 'expo-router';
+import { useTranslation } from 'react-i18next';
+import { useTheme } from './context/ThemeContext';
 
 const key_func = [
   'Divide into groups',
@@ -10,28 +12,51 @@ const key_func = [
 ];
 
 export default function AboutScreen() {
+  const { t } = useTranslation();
+  const { theme, isDarkMode } = useTheme();
+  
+  // Get dynamic styles based on theme
+  const dynamicStyles = {
+    container: {
+      backgroundColor: theme.background,
+    },
+    scrollContent: {
+      padding: 20,
+      alignItems: 'center' as const,
+    },
+    header: {
+      color: theme.text,
+    },
+    text: {
+      color: theme.text,
+    },
+    item: {
+      color: theme.text,
+    },
+  };
+
   return (
-    <View style={styles.container}>
-      <ScrollView contentContainerStyle={styles.scrollContent}>
-        <Text style={styles.header}>{"About Us"}</Text>
-        <Text style={styles.header}>{"Random Team Generator"}</Text>
-        <Text style={styles.header}>
-          {"\nKey Features:"}
+    <View style={[styles.container, dynamicStyles.container]}>
+      <ScrollView contentContainerStyle={[styles.scrollContent, dynamicStyles.scrollContent]}>
+        <Text style={[styles.header, dynamicStyles.header]}>{t('about.title')}</Text>
+        <Text style={[styles.header, dynamicStyles.header]}>{t('common.appName')}</Text>
+        <Text style={[styles.header, dynamicStyles.header]}>
+          {t('about.keyFeatures')}
         </Text>
         {/* Feature list */}
         {key_func.map((item, index) => (
-          <Text key={index} style={styles.item}>{`\u2022 ${item}`}</Text>
+          <Text key={index} style={[styles.item, dynamicStyles.item]}>{`\u2022 ${item}`}</Text>
         ))}
 
         {/* Info block */}
-        <Text style={styles.text}>
-          {"\nFramework: React Native (Expo)\nDatabase: Firebase\nWe will use Google Sheets API"}
+        <Text style={[styles.text, dynamicStyles.text]}>
+          {`\n${t('about.framework')}\n${t('about.database')}\n${t('about.api')}`}
         </Text>
 
         {/* Welcome message */}
-        <Text style={styles.text}>
-        Developed by Sabitkhanov Askhat, Ashenov Bexulatn in the scope of the course "Crossplatform Development" at Astana IT University.
-        Mentor (Teacher): Assistant Professor Abzal Kyzyrkanov
+        <Text style={[styles.text, dynamicStyles.text]}>
+          {t('about.developedBy')}
+          {t('about.mentor')}
         </Text>
       </ScrollView>
     </View>
@@ -41,7 +66,6 @@ export default function AboutScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#25292e',
   },
   scrollContent: {
     padding: 20,
@@ -50,17 +74,14 @@ const styles = StyleSheet.create({
   header: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: '#fff',
     marginBottom: 10,
   },
   text: {
-    color: '#fff',
     fontSize: 16,
     textAlign: 'center',
     marginBottom: 10,
   },
   item: {
-    color: '#fff',
     fontSize: 18,
     textAlign: 'center',
     marginVertical: 4,

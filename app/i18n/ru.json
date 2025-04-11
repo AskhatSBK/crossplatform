@@ -1,0 +1,42 @@
+{
+  "common": {
+    "selectLanguage": "Выберите язык",
+    "close": "Закрыть",
+    "loading": "Загрузка...",
+    "error": "Ошибка",
+    "retry": "Повторить",
+    "cancel": "Отмена",
+    "save": "Сохранить",
+    "delete": "Удалить",
+    "edit": "Редактировать",
+    "search": "Поиск",
+    "settings": "Настройки",
+    "profile": "Профиль",
+    "notifications": "Уведомления",
+    "darkMode": "Темная тема",
+    "lightMode": "Светлая тема",
+    "language": "Язык"
+  },
+  "auth": {
+    "signIn": "Войти",
+    "signUp": "Регистрация",
+    "signOut": "Выйти",
+    "email": "Email",
+    "password": "Пароль",
+    "forgotPassword": "Забыли пароль?",
+    "resetPassword": "Сбросить пароль",
+    "confirmPassword": "Подтвердите пароль",
+    "username": "Имя пользователя",
+    "alreadyHaveAccount": "Уже есть аккаунт?",
+    "dontHaveAccount": "Нет аккаунта?"
+  },
+  "errors": {
+    "required": "Это поле обязательно",
+    "invalidEmail": "Неверный email адрес",
+    "passwordTooShort": "Пароль должен содержать минимум 6 символов",
+    "passwordsDontMatch": "Пароли не совпадают",
+    "invalidCredentials": "Неверный email или пароль",
+    "networkError": "Ошибка сети. Проверьте подключение",
+    "unknownError": "Произошла неизвестная ошибка"
+  }
+} 

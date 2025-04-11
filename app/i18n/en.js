@@ -1,0 +1,37 @@
+export default {
+  common: {
+    appName: 'Team Generator',
+    appSubtitle: 'Create balanced teams quickly',
+    generate: 'Generate Teams',
+    about: 'About',
+    settings: 'Settings',
+    selectLanguage: 'Select Language',
+  },
+  home: {
+    quickGenerate: 'Quick Generate',
+    teamName: 'Team Name',
+    memberCount: 'Number of Members',
+    groupCount: 'Number of Groups',
+    advancedOptions: 'Advanced Options',
+    importMembers: 'Import Members',
+    teamSettings: 'Team Settings',
+    exportTeams: 'Export Teams',
+    recentTeams: 'Recent Teams',
+    members: 'members',
+  },
+  about: {
+    title: 'About Us',
+    keyFeatures: 'Key Features',
+    framework: 'Framework: React Native (Expo)',
+    database: 'Database: Firebase',
+    api: 'We will use Google Sheets API',
+    developedBy: 'Developed by Sabitkhanov Askhat, Ashenov Bexulatn in the scope of the course "Crossplatform Development" at Astana IT University.',
+    mentor: 'Mentor (Teacher): Assistant Professor Abzal Kyzyrkanov',
+  },
+  gestures: {
+    tapToAdd: 'Tap to add a new team',
+    longPressToDelete: 'Long press to delete',
+    swipeToReorder: 'Swipe to reorder teams',
+    doubleTapToEdit: 'Double tap to edit team name',
+  },
+}; 
